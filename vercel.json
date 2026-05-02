@@ -1,0 +1,19 @@
+{
+  "rewrite_configs": [
+    {
+      "source": "/(.*)",
+      "destination": "main.py"
+    }
+  ],
+  "functions": {
+    "main.py": {
+      "runtime": "vercel-python@0.0.1"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "main.py"
+    }
+  ]
+}
